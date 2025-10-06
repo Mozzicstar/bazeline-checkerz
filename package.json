@@ -1,0 +1,48 @@
+{
+  "name": "bazeline-checkerz",
+  "displayName": "Baseline Checker",
+  "description": "Check web features against Baseline compatibility",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": ["Linters"],
+  "activationEvents": ["onLanguage:css", "onLanguage:html", "onLanguage:javascript"],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "baselineChecker.checkFile",
+        "title": "Baseline: Check Current File"
+      },
+      {
+        "command": "baselineChecker.suggestFallback",
+        "title": "Baseline: Suggest Fallback"
+      }
+    ],
+    "configuration": {
+      "title": "Baseline Checker",
+      "properties": {
+        "baselineChecker.enableOnOpen": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable automatic scanning on file open"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@types/vscode": "^1.80.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "postcss": "^8.4.31",
+    "postcss-selector-parser": "^6.0.13"
+  }
+}

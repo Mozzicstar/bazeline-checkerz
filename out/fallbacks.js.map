@@ -1,0 +1,1 @@
+{"version":3,"file":"fallbacks.js","sourceRoot":"","sources":["../src/fallbacks.ts"],"names":[],"mappings":";;;AAMa,QAAA,UAAU,GAA6B;IAClD,gBAAgB,EAAE;QAChB,YAAY,EAAE,qBAAqB;QACnC,WAAW,EAAE,wHAAwH;QACrI,QAAQ,EAAE;;;;;;;;mCAQqB;KAChC;IACD,qBAAqB,EAAE;QACrB,YAAY,EAAE,8BAA8B;QAC5C,WAAW,EAAE,gGAAgG;QAC7G,QAAQ,EAAE;;;;;;;;;;;EAWZ;KACC;CACF,CAAC"}
